@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  main:
+    build: .
+    labels:
+      io.resin.features.supervisor-api: '1'
+    #tty: true

@@ -1,0 +1,7 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-alpine
+
+WORKDIR /usr/src/app
+
+COPY ./* ./
+
+CMD echo "Starting"; while true; do echo "hello from main"; sleep 5; done;
